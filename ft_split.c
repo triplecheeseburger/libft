@@ -6,7 +6,7 @@
 /*   By: hakim <hakim@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/20 13:45:39 by hakim             #+#    #+#             */
-/*   Updated: 2021/11/11 22:38:41 by hakim            ###   ########.fr       */
+/*   Updated: 2021/12/07 17:37:30 by hakim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,6 +54,8 @@ static void	ft_free(char **big, int bigdex)
 		big[index] = NULL;
 		--index;
 	}
+	free(big);
+	big = 0;
 	return ;
 }
 
